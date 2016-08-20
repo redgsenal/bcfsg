@@ -118,8 +118,8 @@ img.aviodsaying{
   margin: 0 auto;
   text-align: center;
   font-size: 2vmax;
-  @media screen and (min-width: $min-mobile-width) {
-    font-size: 18px;
+  @media screen and (min-width: $screen-sm-min) {
+     font-size: 18px;
   }
 }
 .counterbg{
@@ -132,31 +132,19 @@ img.aviodsaying{
   position: relative;
   padding-top: 60px;
   margin: 0 auto;
-  @media screen and (min-width: $min-desktop-width) {
-    width: 99%;
-    margin: 0 auto;
-  }
 }
 .awareness_count{
-    font-size: 8vmax;
-    vertical-align: middle;
-    height: 100%;
-    position: relative;
-    display: block;
-    padding-top: 4%;
-    font-weight: bold;
-
-    @media screen and (max-width: $min-mobile-width) {
-      font-size: 12vw;
-    }
-
-    @media screen and (max-width: $min-desktop-width) {
-      font-size: 8vmax;
-    }
-
-    @media screen and (min-width: $min-desktop-width) {
-      font-size: 120px;
-    }
+  font-size: 42px;
+  padding-top: 2%;
+  font-weight: 900;
+  @media screen and (min-width: $screen-xs-min) {
+    padding-top: 0px;
+    font-size: 15vmax;
+ }
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top: 0;
+    font-size: 120px;
+ }
 }
 .thankyou{
   width: 100%;
@@ -223,7 +211,7 @@ img.our-sponsors{
   max-width: $our-sponsors-max-width-title;
 }
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: $min-desktop-width) {
+@media screen and (min-width: $screen-sm-min) {
   .container {
     font-size: $font-size-ws;
   }
@@ -244,10 +232,6 @@ img.our-sponsors{
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
-  }
-
-  .awareness_count{
-    padding-top: 0;
   }
 }
 
