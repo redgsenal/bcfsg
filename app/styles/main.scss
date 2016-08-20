@@ -1,0 +1,278 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "variables.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "box";
+@import "loadmore";
+@import "blurb";
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+p{
+  margin: 10px 0 20px;
+}
+
+ul{
+  padding-left: 20px;
+  a{
+    color: $text-color;
+    &:hover{
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+}
+
+strong, .stronger{
+  font-weight: 900;
+}
+
+.font-color-light{
+  color: $font-color-light;
+}
+
+.coming-soon-1, .coming-soon-2{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 200px;
+}
+.coming-soon-1{
+  background-image: url('../images/comingsoon1.png');
+}
+.coming-soon-2{
+  background-image: url('../images/comingsoon2.png');
+}
+.content-copy{
+  padding: $content-padding-top 0 $content-padding-bottom;
+  @media screen and (min-width: $min-desktop-width) {
+    padding: $content-padding-top $spacing-sides $content-padding-bottom;
+  }
+  @media screen and (min-width: $min-mobile-width) {
+    padding: $content-padding-top $spacing-sides $content-padding-bottom;
+  }
+  @media screen and (min-width: $min-small-mobile-width) {
+    padding: $content-padding-top $spacing-sides $content-padding-bottom;
+  }
+}
+.small-print-note{
+  font-size: $small-print;
+}
+
+header{
+  padding-top: 80px;
+  @media screen and (max-width: $min-mobile-width) {
+    padding-top: 30px;
+  }
+}
+header, footer{
+  width: 100%;
+  @media screen and (max-width: $min-desktop-width) {
+    padding-left: $spacing-sides;
+    padding-right: $spacing-sides;
+  }
+
+  img.logo{
+    margin: 0 auto;
+    display: block;
+    width: 120px;
+  } 
+}
+footer{
+  padding: $footer-padding 0 0;
+  padding-bottom: 110px;
+
+  @media screen and (max-width: $min-mobile-width) {
+    padding-top: $spacing-top-value;
+    padding-bottom: 80px;
+  }
+}
+img.logo-say-breast{
+  width: 100%;
+  padding: 30px 0 15px;
+  @media screen and (max-width: $min-mobile-width) {
+    padding-left: $spacing-sides;
+    padding-right: $spacing-sides;
+  }
+  @media screen and (min-width: $min-desktop-width) {
+    padding-left: $spacing-sides;
+    padding-right: $spacing-sides;
+  }
+}
+
+.yt-video{
+  margin: 0 auto $grid-gutter-width;
+}
+
+.box_fixed_height{
+  padding-bottom: 165px;
+
+  @media screen and (min-width: $screen-sm-min) {
+    height: 619px;
+    
+  }
+}
+
+img.saytheword{
+  width: 320px;
+  margin: 0 auto;
+  display: block;
+  @media screen and (min-width: $min-mobile-width) {
+    padding-top: $grid-gutter-width;
+  }
+}
+img.aviodsaying{
+  width: 100px;
+}
+
+.counter{
+  position: absolute;
+  top: 55px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  @media screen and (max-width: $min-mobile-width) {
+    font-size: 16px;
+  }
+}
+.counterbg{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.awareness{
+  display: block;
+  position: relative;
+  padding-top: 60px;
+  margin: 0 auto;
+  @media screen and (min-width: $min-desktop-width) {
+    width: 99%;
+    margin: 0 auto;
+  }
+}
+.awareness_count{
+    font-size: 6vmax;
+    vertical-align: middle;
+    height: 100%;
+    position: relative;
+    display: block;
+    padding-top: 4%;
+    font-weight: bold;
+
+    @media screen and (max-width: $min-mobile-width) {
+      font-size: 12vw;
+    }
+
+    @media screen and (max-width: $min-desktop-width) {
+      font-size: 8vmax;
+    }
+
+    @media screen and (min-width: $min-desktop-width) {
+      font-size: 120px;
+    }
+}
+.thankyou{
+  width: 100%;
+  padding: 20px 0;
+}
+
+.bracket{
+  position: relative;
+  text-align: center;
+  margin-bottom: $bottom-margin;
+
+  &:before, &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    content: "";
+    border-top: $bracket-thick solid $bracket-color;
+    border-bottom: $bracket-thick solid $bracket-color;
+    width: $bracket-width;
+  }
+
+  &:before {
+    left: 0;
+    border-left: $bracket-thick solid $bracket-color;    
+  }
+
+  &:after {
+    right: 0;
+    border-right: $bracket-thick solid $bracket-color;
+  }
+}
+
+.bracket_content{
+  padding: $grid-gutter-width $bracket-sides;
+}
+
+.wefie__author{
+  padding-top: 10px;
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+}
+
+.sponsors{
+  text-align: center;
+  margin-bottom: $bottom-margin;
+  a{
+    img{
+      width: $sponsor-img-width;
+      height: $sponsor-img-height;
+      margin-bottom: $grid-gutter-width;
+    }
+  }
+
+  .box__content{
+    padding-bottom: 0;
+  }
+}
+.title--sponsors {
+  padding: $spacing-top-value 0 $grid-gutter-width;
+}
+
+img.our-sponsors{
+  max-width: $our-sponsors-max-width-title;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: $min-desktop-width) {
+  .container {
+    font-size: $font-size-ws;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: $grid-gutter-width;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+  .awareness_count{
+    padding-top: 0;
+  }
+}
+
+.content--flush {
+  margin-left: - $grid-gutter-width / 2;
+  margin-right: - $grid-gutter-width / 2;
+}

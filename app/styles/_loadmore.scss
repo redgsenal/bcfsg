@@ -1,0 +1,102 @@
+$loadmore-radius: 5px;
+$anchor-loadmore-bg: #eedbe3;
+$loadmore-bg: #e6ced8;
+$person1-image-size: 220px;
+$bottom-spacing: 6px;
+
+.social__list, .wefie{
+  @include clearfix;
+  position: relative;
+  margin-left: - $grid-gutter-width / 2;
+  margin-right: - $grid-gutter-width / 2;
+}
+
+.social__post, .wefie__post{
+  margin-bottom: $grid-gutter-width;
+
+  @media screen and (min-width: $screen-sm-min) {
+    float: left;
+    width: 50%;
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    float: left;
+  }
+
+  img{
+    margin: 0 auto;
+  }
+}
+
+.social__nav, .wefie__nav{
+  max-width: 660px;
+  margin: 0 auto;
+  border: 1px solid $panel-border-color;
+  background-color: $loadmore-bg;
+  text-align: center;
+  margin-bottom: $bottom-margin;
+  border-radius: $loadmore-radius;
+  padding-bottom: 5px;
+
+  a{
+    background-color: $anchor-loadmore-bg;
+    border-radius: $loadmore-radius;
+    border: 1px solid $panel-border-color;
+    position: relative;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    margin: -1px;
+    color: $text-color;
+    &:hover{
+      text-decoration: none;
+      color: $text-color;
+      background-color: $panel-border-color;
+    }
+  }
+}
+
+.social__nav{
+  margin-top: $spacing-top-value;
+}
+
+.person_image{
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: $person_sq_dim;
+  height: $person_sq_dim;
+  bottom: 0;
+  position: absolute;
+  &.social__load--left{
+    background-image: url('../images/btn_1.png');
+    background-position: left bottom;
+    left: $grid-gutter-width;
+  } 
+  &.social__load--right{
+    background-image: url("../images/btn_1a.png");
+    background-position: right bottom;
+    right: $grid-gutter-width;
+  }
+  &.wefie__load--left {
+    background-image: url('../images/btn_2.png');
+    background-position: left bottom;
+    left: $grid-gutter-width;
+  } 
+  &.wefie__load--right {
+    background-image: url("../images/btn_2a.png");
+    background-position: right bottom;
+    right: $grid-gutter-width;
+  }
+
+  &.character-avoid-saying{
+    position: absolute;
+    background-image: url('../images/girl1.png');
+    background-position: right bottom;
+    right: $grid-gutter-width;
+    width: $person1-image-size;
+    height: $person1-image-size;
+    bottom: $bottom-spacing;
+  }
+}
