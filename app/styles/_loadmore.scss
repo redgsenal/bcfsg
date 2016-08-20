@@ -31,6 +31,13 @@ $load-more-width: 660px;
   }
 }
 
+.social__post{
+  img{
+    width: 354px;
+    height: 354px;
+  }
+}
+
 .social__nav, .wefie__nav{
   max-width: $load-more-width;
   margin: 0 auto;
