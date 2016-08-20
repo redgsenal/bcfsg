@@ -34,7 +34,10 @@ $blurb-icon-top: 75px;
 }
 
 a.blurb {
+  text-decoration: none;
   &:hover{
+    color: $text-color;
+    font-weight: 900;
     background-color: $blurb-rollover-color;
     .blurb-icon{
       background-image: url("../images/blurb-tail-right--hover.png");

@@ -65,8 +65,8 @@ $bottom-spacing: 6px;
 .person_image{
   background-size: contain;
   background-repeat: no-repeat;
-  width: $person_sq_dim;
-  height: $person_sq_dim;
+  width: $image_sq_dim;
+  height: $image_sq_dim;
   bottom: 0;
   position: absolute;
   &.social__load--left{

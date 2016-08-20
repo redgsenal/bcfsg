@@ -2,13 +2,15 @@
 $border-color: #e5e5e5;
 $site-font-color-light: #e6ced8;
 $font-color-light: #c492a6;
+$bracket-color: #e6ced8;
 
 //panel OR box
 $panel-border-radius: 10px;
 
 //sizes
 $font-size-ws: 18px; // default
-$font-size-mb: 16px; // mobile
+$font-size-count-xs: 15vmax;
+$font-size-count-md: 120px;
 
 $font-family-sans-serif: 'Lato', serif;
 $body-bg: #f7e9ef;
@@ -22,18 +24,15 @@ $font-size-h4: 20px;
 $font-size-h5: 18px;
 $font-size-h6: 12px;
 
-$min-desktop-width: 768px;
-$min-mobile-width: 736px;
-$min-small-mobile-width: 360px;
 $bracket-width: 35px;
 $bracket-thick: 15px;
 $bracket-sides: 60px;
-$bracket-color: #e6ced8;
 $blurb-radius: 10px;
 $spacing-top-value: 20px;
-$person_sq_dim: 120px;
+$spacing-list-value: 20px;
+$image_sq_dim: 120px;
 $bottom-margin: 40px;
-$top-margin: 60px;
+$top-dist-value: 60px;
 $social-post-size: 369px;
 $social-post-mobile-size: 353px;
 $wefie_post_size: 308px;
@@ -49,7 +48,7 @@ $img-bottom-spacing: 10px;
 $spacing-sides: 10px;
 $anchor-blurb-width: 600px;
 $anchor-blurb-height: 75px;
-$font-bold: 900;
+$font-bold-value: 900;
 
 $container-tablet: 768px;
 $container-sm: 768px;
@@ -62,3 +61,11 @@ $spacing-top-mobile-value: 30px;
 $spacing-bottom-mobile-value: 80px;
 $footer-top-padding: 35px; 
 $footer-bottom-padding: 115px;
+
+$box-fixed-height: 588px;
+$box-fixed-btm-padding: 165px;
+$saytheword-img-width: 320px;
+
+$counter-top-padding: 55px;
+
+$coming-soon-height: 200px;

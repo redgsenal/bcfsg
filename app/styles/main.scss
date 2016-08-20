@@ -17,11 +17,11 @@ $icon-font-path: '../fonts/';
 }
 
 p{
-  margin: 10px 0 20px;
+  margin: $content-padding-top 0 $content-padding-bottom - 10px;
 }
 
 ul{
-  padding-left: 20px;
+  padding-left: $spacing-list-value;
   a{
     color: $text-color;
     &:hover{
@@ -32,7 +32,7 @@ ul{
 }
 
 strong, .stronger{
-  font-weight: 900;
+  font-weight: $font-bold-value;
 }
 
 .font-color-light{
@@ -43,7 +43,7 @@ strong, .stronger{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
-  height: 200px;
+  height: $coming-soon-height;
 }
 .coming-soon-1{
   background-image: url('../images/comingsoon1.png');
@@ -62,16 +62,16 @@ strong, .stronger{
 }
 
 header{
-  padding-top: 30px;
+  padding-top: $spacing-top-value + 10px;
   @media screen and (min-width: $screen-sm-min) {
-    padding-top: 80px;
+    padding-top: $spacing-top-value * 4;
   }
 }
 
 img.logo{
   margin: 0 auto;
   display: block;
-  width: 120px;
+  width: $image_sq_dim;
 } 
 
 footer{
@@ -95,15 +95,14 @@ img.logo-say-breast{
 }
 
 .box_fixed_height{
-  padding-bottom: 165px;
-
+  padding-bottom: $box-fixed-btm-padding;
   @media screen and (min-width: $screen-sm-min) {
-    height: 588px;    
+    height: $box-fixed-height;    
   }
 }
 
 img.saytheword{
-  width: 320px;
+  width: $saytheword-img-width;
   margin: 0 auto;
   display: block;
 }
@@ -113,13 +112,13 @@ img.aviodsaying{
 
 .counter{
   position: absolute;
-  top: 55px;
+  top: $counter-top-padding;
   width: 100%;
   margin: 0 auto;
   text-align: center;
   font-size: 2vmax;
   @media screen and (min-width: $screen-sm-min) {
-     font-size: 18px;
+     font-size: $font-size-ws;
   }
 }
 .counterbg{
@@ -130,25 +129,25 @@ img.aviodsaying{
 .awareness{
   display: block;
   position: relative;
-  padding-top: 60px;
+  padding-top: $top-dist-value;
   margin: 0 auto;
 }
 .awareness_count{
   font-size: 42px;
   padding-top: 2%;
-  font-weight: 900;
+  font-weight: $font-bold-value;
   @media screen and (min-width: $screen-xs-min) {
     padding-top: 0px;
-    font-size: 15vmax;
+    font-size: $font-size-count-xs;
  }
   @media screen and (min-width: $screen-sm-min) {
     padding-top: 0;
-    font-size: 120px;
+    font-size: $font-size-count-md;
  }
 }
 .thankyou{
   width: 100%;
-  padding: 20px 0;
+  padding: $spacing-top-value 0;
 }
 
 .bracket{
@@ -182,7 +181,7 @@ img.aviodsaying{
 }
 
 .wefie__author{
-  padding-top: 10px;
+  padding-top: $content-padding-top;
   text-align: left;
   width: 100%;
   display: inline-block;
