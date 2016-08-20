@@ -98,7 +98,7 @@ img.logo-say-breast{
   padding-bottom: 165px;
 
   @media screen and (min-width: $screen-sm-min) {
-    height: 619px;    
+    height: 588px;    
   }
 }
 
@@ -106,9 +106,6 @@ img.saytheword{
   width: 320px;
   margin: 0 auto;
   display: block;
-  @media screen and (min-width: $min-mobile-width) {
-    padding-top: $grid-gutter-width;
-  }
 }
 img.aviodsaying{
   width: 100px;
@@ -120,8 +117,9 @@ img.aviodsaying{
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  @media screen and (max-width: $min-mobile-width) {
-    font-size: 16px;
+  font-size: 2vmax;
+  @media screen and (min-width: $min-mobile-width) {
+    font-size: 18px;
   }
 }
 .counterbg{
@@ -140,7 +138,7 @@ img.aviodsaying{
   }
 }
 .awareness_count{
-    font-size: 6vmax;
+    font-size: 8vmax;
     vertical-align: middle;
     height: 100%;
     position: relative;
