@@ -52,15 +52,9 @@ strong, .stronger{
   background-image: url('../images/comingsoon2.png');
 }
 .content-copy{
-  padding: $content-padding-top 0 $content-padding-bottom;
-  @media screen and (min-width: $min-desktop-width) {
-    padding: $content-padding-top $spacing-sides $content-padding-bottom;
-  }
-  @media screen and (min-width: $min-mobile-width) {
-    padding: $content-padding-top $spacing-sides $content-padding-bottom;
-  }
-  @media screen and (min-width: $min-small-mobile-width) {
-    padding: $content-padding-top $spacing-sides $content-padding-bottom;
+  padding: $content-padding-top $spacing-sides $content-padding-bottom;
+  @media screen and (min-width: $screen-sm-min) {
+    padding: $content-padding-top 0 $content-padding-bottom;
   }
 }
 .small-print-note{
@@ -68,43 +62,31 @@ strong, .stronger{
 }
 
 header{
-  padding-top: 80px;
-  @media screen and (max-width: $min-mobile-width) {
-    padding-top: 30px;
+  padding-top: 30px;
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top: 80px;
   }
 }
-header, footer{
-  width: 100%;
-  @media screen and (max-width: $min-desktop-width) {
-    padding-left: $spacing-sides;
-    padding-right: $spacing-sides;
-  }
 
-  img.logo{
-    margin: 0 auto;
-    display: block;
-    width: 120px;
-  } 
-}
+img.logo{
+  margin: 0 auto;
+  display: block;
+  width: 120px;
+} 
+
 footer{
-  padding: $footer-padding 0 0;
-  padding-bottom: 110px;
+  padding-top: $spacing-top-mobile-value;
+  padding-bottom: $spacing-bottom-mobile-value;
 
-  @media screen and (max-width: $min-mobile-width) {
-    padding-top: $spacing-top-value;
-    padding-bottom: 80px;
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top: $footer-top-padding;
+    padding-bottom: $footer-bottom-padding;
   }
 }
+
 img.logo-say-breast{
-  width: 100%;
-  padding: 30px 0 15px;
-  @media screen and (max-width: $min-mobile-width) {
-    padding-left: $spacing-sides;
-    padding-right: $spacing-sides;
-  }
-  @media screen and (min-width: $min-desktop-width) {
-    padding-left: $spacing-sides;
-    padding-right: $spacing-sides;
+  @media screen and (min-width: $screen-sm-min) {
+    padding: $grid-gutter-width 0 $grid-gutter-width / 2;
   }
 }
 
@@ -116,8 +98,7 @@ img.logo-say-breast{
   padding-bottom: 165px;
 
   @media screen and (min-width: $screen-sm-min) {
-    height: 619px;
-    
+    height: 619px;    
   }
 }
 
